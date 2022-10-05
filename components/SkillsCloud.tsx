@@ -1,6 +1,6 @@
-import { useRef, useMemo } from 'react';
+import { useState, useRef, useMemo } from 'react';
 import * as THREE from 'three';
-import { Canvas, useFrame } from '@react-three/fiber';
+import { Canvas, useFrame, ThreeEvent } from '@react-three/fiber';
 import { Text, OrbitControls } from '@react-three/drei';
 
 interface CloudProps {
@@ -65,7 +65,7 @@ const Skill: React.FC<SkillProps> = ({ skill, position }) => {
 
     const textRef = useRef<any>();
     const color = new THREE.Color();
-    const fontProps = { font: '/Inter-Bold.woff', fontSize: 3, lineHeight: 1, 'material-toneMapped': false }
+    const fontProps = { fontSize: 3, lineHeight: 1, 'material-toneMapped': false }
 
     useFrame(({ camera }) => {
         // Make the text face the camera
