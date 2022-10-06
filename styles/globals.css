@@ -17,6 +17,7 @@ a {
 
 * {
   box-sizing: border-box;
+  cursor: none !important;
 }
 
 :root {
@@ -35,6 +36,7 @@ main {
   html {
     color-scheme: dark;
   }
+
   body {
     color: white;
     background: black;
