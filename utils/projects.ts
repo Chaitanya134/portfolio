@@ -1,5 +1,5 @@
-import ResumeBuilderImage from "../public/assets/resume builder.jpeg";
-import InNeedImage from "../public/assets/inneed.png";
+import ResumeBuilderImage from "../public/resume builder.jpeg";
+import InNeedImage from "../public/inneed.png";
 
 export const projects = [
     {
