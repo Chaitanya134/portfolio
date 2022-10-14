@@ -1,9 +1,10 @@
-import { useLayoutEffect, useRef } from 'react';
+import { useRef } from 'react';
+import useIsomorphicLayoutEffect from '../hooks/useIsomorphicLayoutEffect';
 
 const Cursor: React.FC = () => {
     const cursorRef = useRef<HTMLDivElement>(null);
 
-    useLayoutEffect(() => {
+    useIsomorphicLayoutEffect(() => {
         const handleMouseMove = (e: MouseEvent) => {
             const { clientX, clientY } = e;
             cursorRef.current!.style.left = clientX + "px"

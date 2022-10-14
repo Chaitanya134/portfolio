@@ -32,7 +32,7 @@ const Project: React.FC<ProjectProps> = ({ name, description, description2, src,
                 <h2 className="text-center text-5xl font-bold mb-12">{name}</h2>
                 <div className="w-full h-3/4 rounded-2xl relative overflow-hidden"
                     style={{ boxShadow: "0 0 1rem #00000040" }}>
-                    <Image src={src} objectFit="fill" layout="fill" />
+                    <Image src={src} alt={name} objectFit="fill" layout="fill" />
                 </div>
             </div>
             <div className="py-20 px-lg h-screen z-10 bg-dark text-white flex items-center flex-col gap-6">
@@ -50,12 +50,12 @@ const Project: React.FC<ProjectProps> = ({ name, description, description2, src,
                 </div>
                 <div className="flex items-center justify-center gap-24">
                     <button className="bg-white hover:bg-[#e0e0e0] focus:bg-[#e0e0e0] transition text-dark py-2 px-6 rounded text-lg font-bold">
-                        <a href={demoLink} target="_blank">
+                        <a href={demoLink} target="_blank" rel="noreferrer">
                             LIVE DEMO
                         </a>
                     </button>
                     <button className="bg-white hover:bg-[#e0e0e0] focus:bg-[#e0e0e0] transition text-dark py-2 px-6 rounded text-lg font-bold">
-                        <a href={githubRepoLink} target="_blank" className="flex items-center gap-2">
+                        <a href={githubRepoLink} target="_blank" rel="noreferrer" className="flex items-center gap-2">
                             <BsGithub />Github
                         </a>
                     </button>

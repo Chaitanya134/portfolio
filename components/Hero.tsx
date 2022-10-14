@@ -4,7 +4,7 @@ const Hero: React.FC = () => {
             <div className="flex flex-col items-start gap-4">
                 <h1 className="font-bold text-5xl">
                     Hey,<br />
-                    I'm <span className="text-blue"><i>Chaitanya</i> Giri</span>
+                    I&apos;m <span className="text-blue"><i>Chaitanya</i> Giri</span>
                 </h1>
                 <p className="text-lg">
                     A Full Stack Developer and AI/ML enthusiast, making great<br />
