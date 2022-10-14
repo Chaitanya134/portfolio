@@ -1,3 +1,4 @@
+import React from "react";
 import Image, { StaticImageData } from "next/image";
 import { projects } from "../utils/projects";
 import { BsGithub } from "react-icons/bs";
