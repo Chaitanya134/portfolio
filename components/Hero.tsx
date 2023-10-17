@@ -17,7 +17,8 @@ const Hero: React.FC = () => {
                 </button>
             </div>
             <div className="relative h-[350px] aspect-square drop-shadow-2xl">
-                <Image src="/photo.png" alt="Chaitanya Photo" objectFit="cover" layout="fill" />
+                <Image src="/photo.png" alt="Chaitanya Photo"
+                 objectFit="cover" layout="fill" priority />
             </div>
         </main>
     )
