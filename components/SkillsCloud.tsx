@@ -67,7 +67,7 @@ const Skill: React.FC<SkillProps> = ({ skill, position }) => {
 
     const textRef = useRef<any>();
     const color = new THREE.Color();
-    const fontProps = { fontSize: 3, lineHeight: 1, font: '', 'material-toneMapped': false }
+    const fontProps = { fontSize: 3, lineHeight: 1, 'material-toneMapped': false }
 
     useFrame(({ camera }) => {
         // Make the text face the camera
