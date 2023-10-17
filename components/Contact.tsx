@@ -11,8 +11,8 @@ interface SocialMediaLinkProps {
 const Contact: React.FC = () => {
     return (
         <section id="contact" className="h-screen bg-dark px-lg pt-12 flex flex-col">
-            <h2 className="text-white text-center text-5xl font-bold mb-16">
-                Let&apos;s <i className="text-blue">work</i> together!
+            <h2 className="text-white text-center text-5xl font-bold mb-16 text-container">
+                Let&apos;s <i className="text-gradient">work</i> together!
             </h2>
             <div className="text-white flex flex-col items-center justify-center grow">
                 {
@@ -30,7 +30,8 @@ const Contact: React.FC = () => {
 
 const SocialMediaLink: React.FC<SocialMediaLinkProps> = ({ socialMedia, Icon, username, link }) => {
     return (
-        <a href={link} target="_blank" rel="noreferrer" className="flex mb-4 items-end gap-2 text-2xl overflow-hidden group">
+        <a href={link} target="_blank" rel="noreferrer"
+         className="flex mb-4 items-end gap-2 text-2xl overflow-hidden group text-container">
                 <div className="flex items-center gap-2">
                     <Icon />
                     {socialMedia}
