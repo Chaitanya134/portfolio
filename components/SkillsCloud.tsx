@@ -22,11 +22,13 @@ const skills: string[] = ['JavaScript', 'React.js', 'MongoDb', 'MySQL', 'PHP', '
 
 const SkillsCloud: React.FC = () => {
     return (
-        <Canvas dpr={[1, 2]} camera={{ position: [0, 0, 35], fov: 90 }}>
-            <fog attach="fog" args={['#202025', 0, 80]} />
-            <Cloud count={4} radius={20} />
-            <OrbitControls autoRotate enableZoom={false} panSpeed={0.3} />
-        </Canvas>
+        <div style={{ fontFamily: "Roboto" }}>
+            <Canvas dpr={[1, 2]} camera={{ position: [0, 0, 35], fov: 90 }}>
+                <fog attach="fog" args={['#202025', 0, 80]} />
+                <Cloud count={4} radius={20} />
+                <OrbitControls autoRotate enableZoom={false} panSpeed={0.3} />
+            </Canvas>
+        </div>
     )
 }
 
