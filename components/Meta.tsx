@@ -27,7 +27,7 @@ const Meta: React.FC<MetaProps> = ({ title, keywords, description }) => {
 Meta.defaultProps = {
     title: "Chaitanya Giri",
     keywords: "chaitanya giri, chaitanyagiri, chaitanya, chaitanyag, chaitanya giri portfolio",
-    description: "Chaitanya Giri Portfolio - Full Stack Developer"
+    description: "Chaitanya Giri Portfolio - Full Stack Machine Learning Developer | AI & ML | Flutter"
 }
 
 export default Meta

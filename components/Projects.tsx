@@ -50,6 +50,7 @@ const Project: React.FC<ProjectProps> = ({
         const windowHeight = window.innerHeight;
         const height = Math.max(Math.random(), 0.1) * Math.min(windowHeight - top, 200);
         const child = patternDiv.children[i] as HTMLDivElement;
+        if (height < 0) continue;
         const keyframes = {
             height: height + "px"
         }
