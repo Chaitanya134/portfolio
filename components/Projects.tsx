@@ -91,6 +91,7 @@ const Project: React.FC<ProjectProps> = ({
             objectFit="fill"
             layout="fill"
             className="text-container"
+            priority
           />
         </div>
       </div>
